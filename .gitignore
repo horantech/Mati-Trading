@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.env*.local
+
+# Original (unoptimised) photos stay local — the site serves the generated .webp files,
+# which are committed. Run `pnpm images` (or `pnpm build`) after adding a new original.
+public/images/*.jpg
+public/images/*.jpeg
+public/images/*.png
