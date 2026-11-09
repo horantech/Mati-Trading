@@ -19,7 +19,7 @@ export function divisionPath(slug: DivisionSlug) {
 }
 
 export const divisionImages: Record<DivisionSlug, { hero: ImageKey; detail: ImageKey }> = {
-  coffee: { hero: "division-coffee", detail: "coffee-drying-beds" },
+  coffee: { hero: "coffee-export", detail: "coffee-drying-beds" },
   minerals: { hero: "division-minerals", detail: "minerals-detail" },
   "animal-health": { hero: "division-animal-health", detail: "animal-health-detail" },
   electrical: { hero: "division-electrical", detail: "electrical-detail" },
