@@ -119,7 +119,7 @@ export function PageHero({
       : "bg-[linear-gradient(180deg,rgba(12,22,38,0.6)_0%,rgba(12,22,38,0.3)_40%,rgba(12,22,38,0.92)_100%)]";
   return (
     <section className={`grain relative flex min-h-[78svh] items-end overflow-hidden ${tone === "espresso" ? "bg-espresso" : "bg-navy-950"}`}>
-      <Photo name={image} priority tone={tone} className="absolute inset-0" imgClassName="hero-zoom" />
+      <Photo name={image} priority tone={tone} sizes="(max-aspect-ratio: 16/9) 140vh, 100vw" className="absolute inset-0" imgClassName="hero-zoom" />
       <div className={`absolute inset-0 ${overlay}`} aria-hidden />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(12,22,38,0.88)_0%,rgba(12,22,38,0.6)_38%,rgba(12,22,38,0.1)_72%,rgba(12,22,38,0)_100%)]" aria-hidden />
       <div className="container-x relative pt-40 pb-16 md:pb-24">
@@ -165,7 +165,7 @@ export function CtaBand({
 }) {
   return (
     <section className="grain relative overflow-hidden bg-navy-950">
-      <Photo name={image} className="absolute inset-0" tone="navy" />
+      <Photo name={image} className="absolute inset-0" tone="navy" sizes="100vw" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(12,22,38,0.95)_0%,rgba(12,22,38,0.8)_50%,rgba(12,22,38,0.45)_100%)]" aria-hidden />
       <div className="container-x relative py-28 md:py-36">
         <div className="max-w-2xl">

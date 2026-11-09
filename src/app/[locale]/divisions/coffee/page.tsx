@@ -62,7 +62,7 @@ export default async function CoffeeExport({ params }: Props) {
           </div>
           <Reveal delay={150} className="relative self-start lg:col-span-5 lg:col-start-8">
             <div className="absolute -right-4 -bottom-4 h-full w-full border border-gold/50 md:-right-6 md:-bottom-6" aria-hidden />
-            <Photo name="coffee-origin" tone="forest" className="z-10 aspect-[4/5] rounded-sm" />
+            <Photo name="coffee-origin" tone="forest" sizes="(min-width: 1024px) 40vw, 100vw" className="z-10 aspect-[4/5] rounded-sm" />
           </Reveal>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default async function CoffeeExport({ params }: Props) {
           <div className="mt-16 grid gap-10 md:grid-cols-3">
             {c.offer.items.map((o, i) => (
               <Reveal key={o.title} delay={i * 100}>
-                <Photo name={offerImages[i]} tone={i === 1 ? "forest" : "navy"} className="aspect-[4/3] rounded-sm" />
+                <Photo name={offerImages[i]} tone={i === 1 ? "forest" : "navy"} sizes="(min-width: 768px) 44vw, 133vw" className="aspect-[4/3] rounded-sm" />
                 <h3 className="mt-6 font-display text-2xl text-navy-900 font-bold tracking-tight">{o.title}</h3>
                 <p className="mt-3 leading-relaxed text-ink/65">{o.body}</p>
               </Reveal>

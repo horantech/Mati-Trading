@@ -29,7 +29,7 @@ export default async function Home({ params }: Props) {
     <>
       {/* ───────── Hero ───────── */}
       <section className="grain relative flex min-h-[100svh] flex-col overflow-hidden bg-navy-950">
-        <Photo name="home-hero" priority tone="navy" className="absolute inset-0" imgClassName="hero-zoom" />
+        <Photo name="home-hero" priority tone="navy" sizes="(max-aspect-ratio: 16/9) 178vh, 100vw" className="absolute inset-0" imgClassName="hero-zoom" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(12,22,38,0.55)_0%,rgba(12,22,38,0.15)_35%,rgba(12,22,38,0.85)_85%,#0c1626_100%)]" aria-hidden />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(12,22,38,0.88)_0%,rgba(12,22,38,0.6)_38%,rgba(12,22,38,0.1)_72%,rgba(12,22,38,0)_100%)]" aria-hidden />
 
@@ -149,7 +149,7 @@ export default async function Home({ params }: Props) {
                     <Photo
                       name={divisionImages[slug].hero}
                       tone={i % 3 === 2 ? "forest" : "navy"}
-                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      sizes="(max-width: 639px) 380px, 600px"
                       className="absolute inset-0"
                       imgClassName="transition-transform duration-[1.4s] ease-[var(--ease-out-expo)] group-hover:scale-105"
                     />

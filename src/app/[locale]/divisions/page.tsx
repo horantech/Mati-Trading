@@ -52,6 +52,7 @@ export default async function Divisions({ params }: Props) {
                     <Photo
                       name={divisionImages[slug].hero}
                       tone={i % 3 === 2 ? "forest" : "navy"}
+                      sizes="(min-width: 1024px) 66vw, 133vw"
                       className="aspect-[4/3]"
                       imgClassName="transition-transform duration-[1.4s] ease-[var(--ease-out-expo)] group-hover:scale-105"
                     />

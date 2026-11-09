@@ -125,7 +125,7 @@ export default async function About({ params }: Props) {
       <section className="bg-ivory">
         <div className="container-x py-4">
           <Reveal>
-            <Photo name="about-team" tone="navy" className="aspect-[21/9] rounded-sm" />
+            <Photo name="about-team" tone="navy" sizes="(min-width: 1280px) 1200px, 100vw" className="aspect-[21/9] rounded-sm" />
           </Reveal>
         </div>
         <div className="h-24" />

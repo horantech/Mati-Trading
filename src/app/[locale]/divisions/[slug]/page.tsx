@@ -60,7 +60,7 @@ export default async function DivisionPage({ params }: Props) {
           </div>
           <Reveal delay={150} className="relative lg:col-span-5 lg:col-start-8">
             <div className="absolute -right-4 -bottom-4 h-full w-full border border-gold/50 md:-right-6 md:-bottom-6" aria-hidden />
-            <Photo name={divisionImages[slug].detail} tone="sand" className="z-10 aspect-[4/5] rounded-sm" />
+            <Photo name={divisionImages[slug].detail} tone="sand" sizes="(min-width: 1024px) 40vw, 100vw" className="z-10 aspect-[4/5] rounded-sm" />
           </Reveal>
         </div>
       </section>

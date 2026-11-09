@@ -36,7 +36,7 @@ pnpm start      # serve ./out locally
 
 Every image slot shows a branded placeholder until a photo is added. To add one, save the original (`.jpg`, `.jpeg` or `.png`, any size) as `public/images/<slot>.jpeg` and rebuild.
 
-The build optimises images automatically. `pnpm build` first runs `scripts/optimize-images.mjs`, which creates `<slot>.webp` (max 2400 px) and `<slot>-1200.webp` (for phones) next to each original, and the site serves those. The heavy originals are then removed from `out/`. Run `pnpm images` to optimise without building. Prompts for generating all 31 images are in **[docs/IMAGE_PROMPTS.md](docs/IMAGE_PROMPTS.md)**.
+The build optimises images automatically. `pnpm build` first runs `scripts/optimize-images.mjs`, which writes four WebP sizes next to each original (`<slot>.webp` up to 2400 px, plus `-1800`, `-1200` and `-640`). Each photo lists all of them so every screen downloads only the size it needs, and the URLs carry a content hash (`?v=…`) so `vercel.json` can cache them for a year. The heavy originals are then removed from `out/`. Run `pnpm images` to optimise without building, or `node scripts/optimize-images.mjs --force` to regenerate everything. **Commit the generated `.webp` files**: the originals are gitignored, so Vercel builds only from the WebP files. Prompts for generating all 29 images are in **[docs/IMAGE_PROMPTS.md](docs/IMAGE_PROMPTS.md)**.
 
 ## Contact form
 

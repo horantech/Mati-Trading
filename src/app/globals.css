@@ -135,7 +135,8 @@ html[lang="am"] .text-xs {
     transform 1.1s var(--ease-out-expo);
   transition-delay: var(--reveal-delay, 0ms);
 }
-.reveal[data-visible="true"] {
+.reveal[data-visible="true"],
+.no-reveal .reveal {
   opacity: 1;
   transform: none;
 }

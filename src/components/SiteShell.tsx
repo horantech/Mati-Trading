@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { revealScript } from "./Reveal";
 import { fontVariables } from "@/lib/fonts";
 import type { Locale } from "@/lib/i18n";
 import { getDict } from "@/lib/dictionaries";
@@ -11,7 +12,10 @@ export function SiteShell({ locale, children }: { locale: Locale; children: Reac
   const t = getDict(locale);
   const divisionNames = Object.fromEntries(divisionSlugs.map((s) => [s, t.divisions.items[s].name]));
   return (
-    <html lang={locale} className={fontVariables}>
+    <html lang={locale} className={fontVariables} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: revealScript }} />
+      </head>
       <body>
         <noscript>
           <style>{`.reveal{opacity:1!important;transform:none!important}`}</style>

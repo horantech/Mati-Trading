@@ -1,25 +1,53 @@
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import sharp from "sharp";
 import { images, type ImageKey } from "@/content/images";
 
+const DIR = path.join(process.cwd(), "public", "images");
 const EXTENSIONS = ["webp", "jpg", "jpeg", "png", "avif"];
-const cache = new Map<string, string | null>();
+/** Size variants written by scripts/optimize-images.mjs, smallest first. */
+const VARIANT_SUFFIXES = ["-640", "-1200", "-1800", ""];
 
-const fileExists = (name: string) => fs.existsSync(path.join(process.cwd(), "public", "images", name));
+type Resolved = { src: string; srcSet?: string };
+const cache = new Map<string, Promise<Resolved | null>>();
 
-/** Finds /public/images/<key>.<ext> at build time (optimised .webp preferred). */
-function resolveImage(key: string): string | null {
-  if (cache.has(key)) return cache.get(key)!;
-  const dir = path.join(process.cwd(), "public", "images");
-  let found: string | null = null;
-  for (const ext of EXTENSIONS) {
-    if (fs.existsSync(path.join(dir, `${key}.${ext}`))) {
-      found = `/images/${key}.${ext}`;
-      break;
+/** Short content hash, appended as ?v= so images can be cached forever yet update when replaced. */
+function version(file: string) {
+  return crypto.createHash("md5").update(fs.readFileSync(file)).digest("hex").slice(0, 10);
+}
+
+/**
+ * Finds /public/images/<key>.<ext> at build time. For optimised WebP images it lists
+ * every size variant with its real pixel width, so the browser can pick the right one.
+ */
+function resolveImage(key: string): Promise<Resolved | null> {
+  if (!cache.has(key)) cache.set(key, resolve(key));
+  return cache.get(key)!;
+}
+
+async function resolve(key: string): Promise<Resolved | null> {
+  const webp = path.join(DIR, `${key}.webp`);
+  if (fs.existsSync(webp)) {
+    const entries: { url: string; width: number }[] = [];
+    for (const suffix of VARIANT_SUFFIXES) {
+      const file = path.join(DIR, `${key}${suffix}.webp`);
+      if (!fs.existsSync(file)) continue;
+      const { width = 0 } = await sharp(file).metadata();
+      entries.push({ url: `/images/${key}${suffix}.webp?v=${version(file)}`, width });
     }
+    entries.sort((a, b) => a.width - b.width);
+    const largest = entries[entries.length - 1];
+    return {
+      src: largest.url,
+      srcSet: entries.length > 1 ? entries.map((e) => `${e.url} ${e.width}w`).join(", ") : undefined,
+    };
   }
-  cache.set(key, found);
-  return found;
+  for (const ext of EXTENSIONS.slice(1)) {
+    const file = path.join(DIR, `${key}.${ext}`);
+    if (fs.existsSync(file)) return { src: `/images/${key}.${ext}?v=${version(file)}` };
+  }
+  return null;
 }
 
 type Tone = "navy" | "espresso" | "sand" | "forest";
@@ -67,7 +95,7 @@ function Contours({ color }: { color: string }) {
   );
 }
 
-export function Photo({
+export async function Photo({
   name,
   className = "",
   imgClassName = "",
@@ -82,23 +110,26 @@ export function Photo({
   tone?: Tone;
   priority?: boolean;
   alt?: string;
-  /** Rendered width hint for responsive loading, e.g. "(min-width: 1024px) 50vw, 100vw" */
+  /**
+   * Width the image is drawn at, so the browser downloads the right size,
+   * e.g. "(min-width: 1024px) 50vw, 100vw". For object-cover crops wider than the
+   * frame (a 16:9 photo filling a tall box) give the cropped width, not the box width.
+   */
   sizes?: string;
 }) {
-  const src = resolveImage(name);
+  const resolved = await resolveImage(name);
   const altText = alt ?? images[name].alt;
   // Don't fight an absolute/fixed position passed in by the caller (full-bleed backgrounds).
   const pos = /\b(absolute|fixed)\b/.test(className) ? "" : "relative";
 
-  if (src) {
-    const small = src.endsWith(".webp") && fileExists(`${name}-1200.webp`) ? `/images/${name}-1200.webp` : null;
+  if (resolved) {
     return (
       <div className={`${pos} overflow-hidden ${className}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={src}
-          srcSet={small ? `${small} 1200w, ${src} 2400w` : undefined}
-          sizes={small ? sizes : undefined}
+          src={resolved.src}
+          srcSet={resolved.srcSet}
+          sizes={resolved.srcSet ? sizes : undefined}
           alt={altText}
           loading={priority ? "eager" : "lazy"}
           fetchPriority={priority ? "high" : "auto"}
