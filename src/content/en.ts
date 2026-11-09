@@ -54,7 +54,7 @@ const en = {
       pillars: [
         { title: "Export", body: "Coffee and minerals for international buyers." },
         { title: "Import", body: "Veterinary and electrical supplies for Ethiopian industry." },
-        { title: "Produce", body: "Dairy and poultry for the local market." },
+        { title: "Produce", body: "Dairy, sheep and goats for local and export markets." },
         { title: "Build & advise", body: "Real estate development and consultancy services." },
       ],
     },
@@ -117,7 +117,7 @@ const en = {
       title: "Built on trade. Growing with Ethiopia.",
       body: [
         "Mati Trading PLC is an Ethiopian company headquartered in Addis Ababa. We trade, produce and invest in sectors that matter to Ethiopia's economy.",
-        "Our business started with export trade. Over time, the relationships we built with producers, buyers, suppliers and authorities let us grow into new sectors: mineral export, veterinary and electrical imports, dairy and poultry farming, construction and real estate, and consultancy.",
+        "Our business started with export trade. Over time, the relationships we built with producers, buyers, suppliers and authorities let us grow into new sectors: mineral export, veterinary and electrical imports, dairy and livestock farming, construction and real estate, and consultancy.",
         "What links these businesses is a way of working. We are careful with quality, open in our dealings and committed to partners for the long term.",
       ],
     },
@@ -231,13 +231,13 @@ const en = {
         ],
       },
       "agro-industry": {
-        name: "Agro-Industry: Dairy & Poultry",
-        short: "Modern dairy and poultry farming producing quality food for Ethiopian families.",
+        name: "Agro-Industry: Dairy & Livestock",
+        short: "Modern dairy, sheep and goat farming producing quality food for Ethiopia and beyond.",
         tagline: "Fresh, local food, produced to modern standards.",
-        intro: "Agriculture is in our roots. Our dairy and poultry operations use modern husbandry, hygiene and animal welfare practices to supply fresh milk, eggs and poultry products to the Ethiopian market.",
+        intro: "Agriculture is in our roots. Our dairy and livestock operations use modern husbandry, feeding and animal welfare practices to raise healthy cattle, sheep and goats and supply fresh milk and quality livestock to the market.",
         offerings: [
           { title: "Dairy farming", body: "Well-managed herds producing fresh, high-quality milk." },
-          { title: "Poultry farming", body: "Layer and broiler production with careful biosecurity." },
+          { title: "Sheep & goat farming", body: "Healthy flocks raised for quality meat and live animal supply." },
           { title: "Local supply", body: "Reliable supply to retailers, hotels and processors." },
         ],
         strengths: [

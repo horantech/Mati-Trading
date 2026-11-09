@@ -48,7 +48,7 @@ These images are used three ways: as a wide hero, a 4:3 image and a portrait car
 | `division-minerals` | 16:9 | Raw mineral ore and polished samples (gold-bearing quartz, tantalite, gemstones) on a dark slate surface in a geology lab, an open-pit mine softly visible through a window, dramatic side light. |
 | `division-animal-health` | 16:9 | An Ethiopian veterinarian in a clean white coat examining a healthy dairy cow on a modern farm, vet case and stethoscope nearby, morning light, green highlands behind. |
 | `division-electrical` | 16:9 | A modern, well-organised electrical warehouse with industrial cable reels, switchgear cabinets and transformers on pallets, an Ethiopian technician with a tablet checking stock, cool clean light with warm accents. |
-| `division-agro-industry` | 16:9 | A modern dairy farm in the green Ethiopian countryside, healthy cows in a clean open barn, a farmer in overalls, golden morning light, hills in the distance. |
+| `division-agro-industry` | 16:9 | A large healthy flock of sheep and goats grazing on green Ethiopian highland pasture beside a modern livestock farm with clean barns and fencing, an Ethiopian herder in a work jacket walking among them, golden morning light, rolling hills and acacia trees in the distance. No chickens or poultry. |
 | `division-construction` | 16:9 | A contemporary glass-and-stone building under construction in Addis Ababa, a tower crane against a clear sky, workers in hi-vis vests and helmets, golden hour. |
 | `division-consultancy` | 16:9 | An Ethiopian business consultant presenting to clients in a bright, modern meeting room, charts on a screen softly out of focus, notebooks and coffee cups on the table. |
 
@@ -59,7 +59,7 @@ These images are used three ways: as a wide hero, a 4:3 image and a portrait car
 | `minerals-detail` | 4:5 | Macro close-up of labelled mineral sample bags and ore fragments on a lab bench, a hand holding a loupe over a crystal, shallow focus. |
 | `animal-health-detail` | 4:5 | Clean, well-organised veterinary pharmacy shelves with boxed medicines, vaccine vials in a glass-door cold-storage fridge, a gloved hand selecting a box. |
 | `electrical-detail` | 4:5 | Close-up of an electrician's hands installing breakers in a modern distribution panel, colour-coded wires, precise and focused. |
-| `agro-industry-detail` | 4:5 | A bright, clean, modern poultry house with healthy white hens and automated feeders, soft natural light, hygienic and calm. |
+| `agro-industry-detail` | 4:5 | Close-up of healthy goats and sheep eating hay from a wooden feeding trough in a clean, modern, well-ventilated livestock pen, a farmer's hand resting on a goat's back, soft natural light through open sides, calm and well cared for. No chickens or poultry. |
 | `construction-detail` | 4:5 | Two Ethiopian engineers in helmets reviewing architectural drawings on a tablet at a building site, concrete frame behind, golden light. |
 | `consultancy-detail` | 4:5 | Close-up of a professional's hands with a pen over a market-research report and a map of Ethiopia, laptop beside, warm desk light. |
 

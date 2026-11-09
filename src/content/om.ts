@@ -52,7 +52,7 @@ const om: Dict = {
       pillars: [
         { title: "Alergii", body: "Bunaa fi albuuda bitattoota idil-addunyaatiif." },
         { title: "Galchii", body: "Dhiyeessii yaala beeyladaa fi elektirikaa industirii Itoophiyaatiif." },
-        { title: "Oomisha", body: "Aannanii fi lukuu gabaa biyya keessaatiif." },
+        { title: "Oomisha", body: "Aannan, hoolaa fi re'ee gabaa biyya keessaa fi alaatiif." },
         { title: "Ijaarsaa fi gorsa", body: "Misooma qabeenya manaa fi tajaajila gorsaa." },
       ],
     },
@@ -115,7 +115,7 @@ const om: Dict = {
       title: "Daldala irratti ijaarame. Itoophiyaa wajjin guddachaa jira.",
       body: [
         "Mati Trading PLC dhaabbata Itoophiyaa waajjirri muummee isaa Finfinnee ta'eedha. Dameewwan dinagdee Itoophiyaaf barbaachisoo ta'an keessatti ni daldalla, ni oomishna, invastimantiis ni goona.",
-        "Hojiin keenya daldala alergii irraa jalqabe. Yeroo booda, hariiroon oomishtoota, bitattoota, dhiyeessitootaa fi qaamolee mootummaa wajjin ijaarre gara dameewwan haaraatti akka babal'annu nu dandeessise: alergii albuudaa, galchii yaala beeyladaa fi elektirikaa, horsiisa loon aannanii fi lukuu, ijaarsaa fi qabeenya manaa, akkasumas tajaajila gorsaa.",
+        "Hojiin keenya daldala alergii irraa jalqabe. Yeroo booda, hariiroon oomishtoota, bitattoota, dhiyeessitootaa fi qaamolee mootummaa wajjin ijaarre gara dameewwan haaraatti akka babal'annu nu dandeessise: alergii albuudaa, galchii yaala beeyladaa fi elektirikaa, horsiisa loon aannanii fi horii, ijaarsaa fi qabeenya manaa, akkasumas tajaajila gorsaa.",
         "Wanti daldaloota kanneen walitti hidhu akkaataa hojii keenyaati. Qulqullinaaf of eeggannoo goona, hojii keenya keessatti iftoomina qabna, michoota keenyaaf immoo yeroo dheeraaf kutannoo qabna.",
       ],
     },
@@ -229,13 +229,13 @@ const om: Dict = {
         ],
       },
       "agro-industry": {
-        name: "Industirii Qonnaa: Aannanii fi Lukuu",
-        short: "Horsiisa loon aannanii fi lukuu ammayyaa kan maatii Itoophiyaaf nyaata qulqullina qabu oomishu.",
+        name: "Industirii Qonnaa: Aannanii fi Horii",
+        short: "Horsiisa ammayyaa loon aannanii, hoolaa fi re'ee kan Itoophiyaa fi gabaa alaatiif nyaata qulqullina qabu oomishu.",
         tagline: "Nyaata haaraa fi naannoo, sadarkaa ammayyaatiin oomishame.",
-        intro: "Qonnaan hidda keenya keessa jira. Hojiin aannanii fi lukuu keenya horsiisa ammayyaa, qulqullina fayyaa fi kunuunsa beeyladaa fayyadamuun aannan haaraa, hanqaaquu fi oomishaalee lukuu gabaa Itoophiyaatiif dhiyeessa.",
+        intro: "Qonnaan hidda keenya keessa jira. Hojiin aannanii fi horii keenya horsiisa ammayyaa, nyaachisa sirrii fi kunuunsa beeyladaa fayyadamuun loon, hoolaa fi re'ee fayya qabeeyyii horsiisee aannan haaraa fi horii qulqullina qabu gabaaf dhiyeessa.",
         offerings: [
           { title: "Horsiisa loon aannanii", body: "Loon sirnaan kunuunfaman aannan haaraa fi qulqullina olaanaa qabu oomishan." },
-          { title: "Horsiisa lukuu", body: "Oomisha lukuu hanqaaquu fi foonii, eegumsa dhukkubaa cimaa wajjin." },
+          { title: "Horsiisa hoolaa fi re'ee", body: "Hoolaa fi re'ee fayya qabeeyyii foon qulqullina qabuu fi dhiyeessii horii jiraataaf horsiifaman." },
           { title: "Dhiyeessii naannoo", body: "Dhiyeessii amanamaa daldaltootaaf, hoteelotaaf fi warshaalee qopheessaniif." },
         ],
         strengths: [

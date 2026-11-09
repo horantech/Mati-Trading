@@ -21,14 +21,14 @@ export const images = {
   "division-minerals": { alt: "Mineral ore samples in an industrial setting", ratio: "16:9" },
   "division-animal-health": { alt: "A veterinarian examining dairy cattle on a farm", ratio: "16:9" },
   "division-electrical": { alt: "Electrical switchgear and cable reels in a warehouse", ratio: "16:9" },
-  "division-agro-industry": { alt: "A modern dairy farm in the Ethiopian countryside", ratio: "16:9" },
+  "division-agro-industry": { alt: "A flock of sheep and goats on a modern farm in the Ethiopian highlands", ratio: "16:9" },
   "division-construction": { alt: "A modern building under construction in Addis Ababa", ratio: "16:9" },
   "division-consultancy": { alt: "Consultants reviewing documents in a bright meeting room", ratio: "16:9" },
 
   "minerals-detail": { alt: "Close-up of graded mineral samples in sample bags", ratio: "4:5" },
   "animal-health-detail": { alt: "Veterinary medicines arranged on clean shelves", ratio: "4:5" },
   "electrical-detail": { alt: "An electrician installing a distribution panel", ratio: "4:5" },
-  "agro-industry-detail": { alt: "A clean, modern poultry house with healthy hens", ratio: "4:5" },
+  "agro-industry-detail": { alt: "Healthy goats and sheep feeding in a clean, modern livestock pen", ratio: "4:5" },
   "construction-detail": { alt: "Engineers reviewing plans on a construction site", ratio: "4:5" },
   "consultancy-detail": { alt: "A business advisor presenting market data", ratio: "4:5" },
 
