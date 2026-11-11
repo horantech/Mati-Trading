@@ -28,7 +28,7 @@ export const images = {
   "minerals-detail": { alt: "Close-up of graded mineral samples in sample bags", ratio: "4:5" },
   "animal-health-detail": { alt: "Veterinary medicines arranged on clean shelves", ratio: "4:5" },
   "electrical-detail": { alt: "An electrician installing a distribution panel", ratio: "4:5" },
-  "agro-industry-detail": { alt: "Healthy goats and sheep feeding in a clean, modern livestock pen", ratio: "4:5" },
+  "agro-industry-detail": { alt: "A clean, modern poultry house with healthy hens", ratio: "4:5" },
   "construction-detail": { alt: "Engineers reviewing plans on a construction site", ratio: "4:5" },
   "consultancy-detail": { alt: "A business advisor presenting market data", ratio: "4:5" },
 

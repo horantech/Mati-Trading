@@ -23,12 +23,15 @@ export default async function Contact({ params }: Props) {
   const c = t.contact;
   const divisions = divisionSlugs.map((slug) => ({ slug, name: t.divisions.items[slug].name }));
 
-  const details = [
-    { icon: Pin, label: c.details.address, value: site.contact.address[locale] },
-    { icon: Mail, label: c.details.email, value: site.contact.email, href: `mailto:${site.contact.email}` },
-    { icon: Phone, label: c.details.phone, value: site.contact.phone, href: `tel:${site.contact.phone.replace(/\s/g, "")}` },
-    ...(site.contact.whatsapp ? [{ icon: Chat, label: c.details.whatsapp, value: `+${site.contact.whatsapp}`, href: `https://wa.me/${site.contact.whatsapp}` }] : []),
-    { icon: Clock, label: c.details.hours, value: c.details.hoursValue },
+  type Line = { text: string; href?: string };
+  const details: { icon: typeof Pin; label: string; lines: Line[] }[] = [
+    { icon: Pin, label: c.details.address, lines: [{ text: site.contact.address[locale] }] },
+    { icon: Mail, label: c.details.email, lines: site.contact.emails.map((e) => ({ text: e, href: `mailto:${e}` })) },
+    { icon: Phone, label: c.details.phone, lines: site.contact.phones.map((p) => ({ text: p, href: `tel:${p.replace(/\s/g, "")}` })) },
+    ...(site.contact.whatsapp
+      ? [{ icon: Chat, label: c.details.whatsapp, lines: [{ text: `+${site.contact.whatsapp}`, href: `https://wa.me/${site.contact.whatsapp}` }] }]
+      : []),
+    { icon: Clock, label: c.details.hours, lines: [{ text: c.details.hoursValue }] },
   ];
 
   return (
@@ -40,24 +43,28 @@ export default async function Contact({ params }: Props) {
           <Reveal className="lg:col-span-7">
             <h2 className="font-display text-3xl text-navy-900 md:text-4xl font-bold tracking-tight">{c.form.title}</h2>
             <div className="hairline mt-6 mb-10 w-24 opacity-70" style={{ background: "var(--color-gold)" }} />
-            <ContactForm t={c.form} divisions={divisions} endpointEmail={site.formEmail} />
+            <ContactForm t={c.form} divisions={divisions} endpointEmail={site.formEmail} ccEmail={site.formCc} />
           </Reveal>
 
           <Reveal delay={150} className="lg:col-span-4 lg:col-start-9">
             <div className="grain relative overflow-hidden rounded-sm bg-navy-900 p-8 text-crema md:p-10">
               <h2 className="eyebrow text-gold-light">{c.details.title}</h2>
               <ul className="mt-8 space-y-7">
-                {details.map(({ icon: Icon, label, value, href }) => (
+                {details.map(({ icon: Icon, label, lines }) => (
                   <li key={label} className="flex gap-4">
                     <Icon className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-[11px] tracking-[0.18em] text-crema/50 uppercase">{label}</p>
-                      {href ? (
-                        <a href={href} className="mt-1 block break-words text-crema transition-colors hover:text-gold-light">
-                          {value}
-                        </a>
-                      ) : (
-                        <p className="mt-1 text-crema">{value}</p>
+                      {lines.map(({ text, href }) =>
+                        href ? (
+                          <a key={text} href={href} className="mt-1 block break-words text-crema transition-colors hover:text-gold-light">
+                            {text}
+                          </a>
+                        ) : (
+                          <p key={text} className="mt-1 text-crema">
+                            {text}
+                          </p>
+                        ),
                       )}
                     </div>
                   </li>

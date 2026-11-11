@@ -50,9 +50,9 @@ const om: Dict = {
         "Oomishtoota Itoophiyaa bitattoota idil-addunyaa wajjin walitti hidhna, industiriiwwan Itoophiyaaf meeshaalee amanamoo dhiyeessina, akkasumas dameewwan biyya keessatti bu'aa itti fufiinsa qabu uuman keessatti invastimantii goona.",
       ],
       pillars: [
-        { title: "Alergii", body: "Bunaa fi albuuda bitattoota idil-addunyaatiif." },
+        { title: "Alergii", body: "Buna qonna keenya irraa, albuuda immoo bakkeewwan albuudaa keenya irraa." },
         { title: "Galchii", body: "Dhiyeessii yaala beeyladaa fi elektirikaa industirii Itoophiyaatiif." },
-        { title: "Oomisha", body: "Aannan, hoolaa fi re'ee gabaa biyya keessaa fi alaatiif." },
+        { title: "Oomisha", body: "Aannanii fi lukuu gabaa biyya keessaatiif." },
         { title: "Ijaarsaa fi gorsa", body: "Misooma qabeenya manaa fi tajaajila gorsaa." },
       ],
     },
@@ -68,7 +68,7 @@ const om: Dict = {
       title: "Filatamoo Itoophiyaa alatti ergina. Waan Itoophiyaan barbaaddu galchina.",
       export: {
         label: "Alergii",
-        body: "Bunaa fi albuuda Itoophiyaa sanada guutuu, to'annoo qulqullinaa fi loojistiksii amanamaa Jibuutii keessaan qabuun qopheessinee bitattoota idil-addunyaatti ergina.",
+        body: "Buna qonna keenya irratti oomifnee, albuuda bakkeewwan albuudaa keenya irraa baasnee, sanada guutuu, to'annoo qulqullinaa fi loojistiksii amanamaa Jibuutii keessaan qabuun bitattoota idil-addunyaatti ergina.",
       },
       import: {
         label: "Galchii",
@@ -115,7 +115,7 @@ const om: Dict = {
       title: "Daldala irratti ijaarame. Itoophiyaa wajjin guddachaa jira.",
       body: [
         "Mati Trading PLC dhaabbata Itoophiyaa waajjirri muummee isaa Finfinnee ta'eedha. Dameewwan dinagdee Itoophiyaaf barbaachisoo ta'an keessatti ni daldalla, ni oomishna, invastimantiis ni goona.",
-        "Hojiin keenya daldala alergii irraa jalqabe. Yeroo booda, hariiroon oomishtoota, bitattoota, dhiyeessitootaa fi qaamolee mootummaa wajjin ijaarre gara dameewwan haaraatti akka babal'annu nu dandeessise: alergii albuudaa, galchii yaala beeyladaa fi elektirikaa, horsiisa loon aannanii fi horii, ijaarsaa fi qabeenya manaa, akkasumas tajaajila gorsaa.",
+        "Hojiin keenya daldala alergii irraa jalqabe. Yeroo booda, hariiroon oomishtoota, bitattoota, dhiyeessitootaa fi qaamolee mootummaa wajjin ijaarre gara dameewwan haaraatti akka babal'annu nu dandeessise: alergii albuudaa, galchii yaala beeyladaa fi elektirikaa, horsiisa loon aannanii fi lukuu, ijaarsaa fi qabeenya manaa, akkasumas tajaajila gorsaa.",
         "Wanti daldaloota kanneen walitti hidhu akkaataa hojii keenyaati. Qulqullinaaf of eeggannoo goona, hojii keenya keessatti iftoomina qabna, michoota keenyaaf immoo yeroo dheeraaf kutannoo qabna.",
       ],
     },
@@ -124,7 +124,7 @@ const om: Dict = {
       title: "Akkaataa itti raawwannu, damee daldalaa hunda keessatti.",
       items: [
         { tag: "01", title: "Hubachuu", body: "Ibsa oomishaa, yeroo fi ulaagaa gabaa maamilaa irraa jalqabna." },
-        { tag: "02", title: "Argamsiisuu", body: "Oomishtoota hayyama qabanii fi warshaalee ragaa qaban kan beeknuu fi amannu wajjin hojjenna." },
+        { tag: "02", title: "Argamsiisuu", body: "Qonna bunaa fi bakkeewwan albuudaa keenya irraa oomishna; warshaalee ragaa qaban kan beeknuu fi amannu wajjinis hojjenna." },
         { tag: "03", title: "Mirkaneessuu", body: "Oomishaaleen osoo hin socho'in dura ni sakatta'amu, ni qoratamu, sanadaanis ni galmeeffamu." },
         { tag: "04", title: "Dhiyeessuu", body: "Hayyama, loojistiksii fi kastamii hanga geejjiba xumuraatti ni bulchina." },
         { tag: "05", title: "Deeggaruu", body: "Geejjiba booda illee hordoffii fi deeggarsa gurgurtaa boodaatiin waliin turra." },
@@ -174,7 +174,7 @@ const om: Dict = {
     items: {
       coffee: {
         name: "Alergii Bunaa",
-        short: "Buna magariisaa Itoophiyaa qulqullina qabu argamsiisnee warra buna waadanii fi galchitoota addunyaa maraatti erguu.",
+        short: "Buna magariisaa Itoophiyaa qulqullina qabu qonna keenya irratti oomishnee, sassaabnee warra buna waadanii fi galchitoota addunyaa maraatti erguu.",
         tagline: "Alergii Itoophiyaa beekamaa, of eeggannoon kan qabamu.",
         intro: "",
         offerings: [],
@@ -182,18 +182,18 @@ const om: Dict = {
       },
       minerals: {
         name: "Misoomaa fi Alergii Albuudaa",
-        short: "Albuudota industirii fi gatii olaanaa qaban Itoophiyaa itti gaafatamummaan misoomsuu fi alatti erguu.",
+        short: "Albuudota industirii fi gatii olaanaa qaban bakkeewwan albuudaa keenya irraa misoomsuu fi alatti erguu.",
         tagline: "Qabeenya uumamaa Itoophiyaa, itti gaafatamummaan dhiyaate.",
-        intro: "Itoophiyaan qabeenya albuudaa Afrikaa Bahaa keessatti baay'ee badhaadhaa ta'an keessaa tokko qabdi. Oomishtoota hayyama qaban wajjin hojjechuun albuudota ni misoomsina, sadarkaa itti kennina, bitattoota industirii biyya alaatti ni ergina — sanada guutuu fi hordoffii harka-jijjiirraa ifa ta'een.",
+        intro: "Itoophiyaan qabeenya albuudaa Afrikaa Bahaa keessatti baay'ee badhaadhaa ta'an keessaa tokko qabdi. Bakkeewwan albuudaa mataa keenyaa qabna; achitti albuudota ni misoomsina, ni baasna, sadarkaa itti kennina, bitattoota industirii biyya alaatti ni ergina — sanada guutuu fi hordoffii ifa ta'e bakka keenya irraa hanga bitataatti.",
         offerings: [
-          { title: "Argamsiisuu fi misoomsuu", body: "Dhiyeessii amanamaa fi yeroo dheeraa misoomsuuf hojii albuudaa hayyama qaban wajjin tumsina." },
+          { title: "Bakkeewwan albuudaa keenya", body: "Albuudni bakkeewwan nuti qabnuu fi bulchinu irraa dhufa; kunis bitattootaaf dhiyeessii amanamaa fi yeroo dheeraa mirkaneessa." },
           { title: "Sadarkaa kennuu fi to'annoo qulqullinaa", body: "Loottiin hundi osoo hin ergamin dura, akka ibsa bitataatti sampilli fudhatamee, qoratamee sadarkaan itti kennama." },
           { title: "Loojistiksii alergii", body: "Sanadoota, hayyamoota, paakeejii fi erga Jibuutii keessaan ni raawwanna." },
         ],
         strengths: [
           { title: "Seeraaf dursa", body: "Seerota albuudaa fi alergii Itoophiyaa keessatti hojjenna." },
           { title: "Sanada ifa ta'e", body: "Bitattoonni hordoffii guutuu fi ragaa qorannoo ni argatu." },
-          { title: "Michoota amanamoo", body: "Oomishtootaa fi bitattoota wajjin hariiroo yeroo dheeraa ijaarra." },
+          { title: "Michoota amanamoo", body: "Bitattoota keenya wajjin hariiroo yeroo dheeraa ijaarra." },
         ],
       },
       "animal-health": {
@@ -229,13 +229,13 @@ const om: Dict = {
         ],
       },
       "agro-industry": {
-        name: "Industirii Qonnaa: Aannanii fi Horii",
-        short: "Horsiisa ammayyaa loon aannanii, hoolaa fi re'ee kan Itoophiyaa fi gabaa alaatiif nyaata qulqullina qabu oomishu.",
+        name: "Industirii Qonnaa: Faarmii Aannanii fi Lukuu",
+        short: "Horsiisa loon aannanii fi lukuu ammayyaa kan maatii Itoophiyaaf nyaata qulqullina qabu oomishu.",
         tagline: "Nyaata haaraa fi naannoo, sadarkaa ammayyaatiin oomishame.",
-        intro: "Qonnaan hidda keenya keessa jira. Hojiin aannanii fi horii keenya horsiisa ammayyaa, nyaachisa sirrii fi kunuunsa beeyladaa fayyadamuun loon, hoolaa fi re'ee fayya qabeeyyii horsiisee aannan haaraa fi horii qulqullina qabu gabaaf dhiyeessa.",
+        intro: "Qonnaan hidda keenya keessa jira. Hojiin aannanii fi lukuu keenya horsiisa ammayyaa, qulqullina fayyaa fi kunuunsa beeyladaa fayyadamuun aannan haaraa, hanqaaquu fi oomishaalee lukuu gabaa Itoophiyaatiif dhiyeessa.",
         offerings: [
           { title: "Horsiisa loon aannanii", body: "Loon sirnaan kunuunfaman aannan haaraa fi qulqullina olaanaa qabu oomishan." },
-          { title: "Horsiisa hoolaa fi re'ee", body: "Hoolaa fi re'ee fayya qabeeyyii foon qulqullina qabuu fi dhiyeessii horii jiraataaf horsiifaman." },
+          { title: "Horsiisa lukuu", body: "Oomisha lukuu hanqaaquu fi foonii, eegumsa dhukkubaa cimaa wajjin." },
           { title: "Dhiyeessii naannoo", body: "Dhiyeessii amanamaa daldaltootaaf, hoteelotaaf fi warshaalee qopheessaniif." },
         ],
         strengths: [
@@ -280,11 +280,11 @@ const om: Dict = {
   },
 
   coffee: {
-    meta: { title: "Alergii Bunaa", description: "Buna magariisaa Itoophiyaa sadarkaa olaanaa fi daldalaa, gaarreen Gujii irraa argamee warra buna waadanii fi galchitoota addunyaa maraatti ergamu." },
+    meta: { title: "Alergii Bunaa", description: "Buna magariisaa Itoophiyaa sadarkaa olaanaa fi daldalaa, qonna keenya gaarreen Gujii irratti oomishamee sassaabamee, warra buna waadanii fi galchitoota addunyaa maraatti ergamu." },
     hero: {
       eyebrow: "Damee daldalaa 01 · Alergii Bunaa",
       title: "Buna magariisaa Itoophiyaa, of eeggannoon alatti ergamu.",
-      lead: "Buna magariisaa sadarkaa olaanaa fi daldalaa gaarreen Gujii irraa argamsiisnee, qopheessinee warra buna waadanii fi galchitoota addunyaa maraatti ergina.",
+      lead: "Buna magariisaa sadarkaa olaanaa fi daldalaa qonna keenya gaarreen Gujii irratti oomishnee, sassaabnee, qopheessinee warra buna waadanii fi galchitoota addunyaa maraatti ergina.",
       cta: "Sampila gaafadhaa",
     },
     story: {
@@ -292,7 +292,7 @@ const om: Dict = {
       title: "Gujii: ol ka'aa, magariisa, bunaaf uumame.",
       body: [
         "Gujiin gaarreen kibba Itoophiyaa keessatti argama. Halkan qabbanaa'aa, biyyoo volkaanoo gabbataa fi gaaddisni mukkeen biyya keessaa firii bunaa suuta akka bilchaatu taasisu; bu'aan isaas kubbaayyaa qulqulluu, mi'aawaa fi urgaa daraaraa qabu kan beekamaa ta'eedha.",
-        "Oomishtootaa fi buufatawwan miicaa bunaa naannichaa wajjin dhiyeenyaan hojjenna; kanaafuu qonna irraa hanga buufata dooniitti qulqullina to'achuu dandeenya.",
+        "Bunni keenya qonna keenya naannicha jiru irratti oomishamee sassaabama; kanaafuu muka irraa hanga buufata dooniitti qulqullina ofii keenyaan to'anna.",
       ],
       facts: [
         { label: "Naannoo", value: "Godina Gujii, Oromiyaa" },

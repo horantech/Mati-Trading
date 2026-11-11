@@ -60,16 +60,20 @@ export function Footer({ locale, t }: { locale: Locale; t: Dict }) {
               <h2 className="eyebrow text-gold">{t.footer.contact}</h2>
               <ul className="mt-5 space-y-3 text-sm text-crema/70">
                 <li>{site.contact.address[locale]}</li>
-                <li>
-                  <a href={`mailto:${site.contact.email}`} className="transition-colors hover:text-gold-light">
-                    {site.contact.email}
-                  </a>
-                </li>
-                <li>
-                  <a href={`tel:${site.contact.phone.replace(/\s/g, "")}`} className="transition-colors hover:text-gold-light">
-                    {site.contact.phone}
-                  </a>
-                </li>
+                {site.contact.emails.map((email) => (
+                  <li key={email}>
+                    <a href={`mailto:${email}`} className="break-all transition-colors hover:text-gold-light">
+                      {email}
+                    </a>
+                  </li>
+                ))}
+                {site.contact.phones.map((phone) => (
+                  <li key={phone}>
+                    <a href={`tel:${phone.replace(/\s/g, "")}`} className="whitespace-nowrap transition-colors hover:text-gold-light">
+                      {phone}
+                    </a>
+                  </li>
+                ))}
               </ul>
               {socials.length > 0 && (
                 <ul className="mt-6 flex gap-4 text-xs tracking-widest text-gold uppercase">

@@ -59,7 +59,7 @@ These images are used three ways: as a wide hero, a 4:3 image and a portrait car
 | `minerals-detail` | 4:5 | Macro close-up of labelled mineral sample bags and ore fragments on a lab bench, a hand holding a loupe over a crystal, shallow focus. |
 | `animal-health-detail` | 4:5 | Clean, well-organised veterinary pharmacy shelves with boxed medicines, vaccine vials in a glass-door cold-storage fridge, a gloved hand selecting a box. |
 | `electrical-detail` | 4:5 | Close-up of an electrician's hands installing breakers in a modern distribution panel, colour-coded wires, precise and focused. |
-| `agro-industry-detail` | 4:5 | Close-up of healthy goats and sheep eating hay from a wooden feeding trough in a clean, modern, well-ventilated livestock pen, a farmer's hand resting on a goat's back, soft natural light through open sides, calm and well cared for. No chickens or poultry. |
+| `agro-industry-detail` | 4:5 | A bright, clean, modern poultry house with healthy white hens and automated feeders, an Ethiopian farm worker checking the birds, soft natural light, hygienic and calm. Sharp focus, professional DSLR photograph. |
 | `construction-detail` | 4:5 | Two Ethiopian engineers in helmets reviewing architectural drawings on a tablet at a building site, concrete frame behind, golden light. |
 | `consultancy-detail` | 4:5 | Close-up of a professional's hands with a pen over a market-research report and a map of Ethiopia, laptop beside, warm desk light. |
 

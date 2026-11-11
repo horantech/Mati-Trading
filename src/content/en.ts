@@ -52,9 +52,9 @@ const en = {
         "We connect Ethiopian producers with international buyers, supply Ethiopian industries with reliable equipment, and invest in sectors that create lasting value at home.",
       ],
       pillars: [
-        { title: "Export", body: "Coffee and minerals for international buyers." },
+        { title: "Export", body: "Coffee from our own farm and minerals from our own mining sites." },
         { title: "Import", body: "Veterinary and electrical supplies for Ethiopian industry." },
-        { title: "Produce", body: "Dairy, sheep and goats for local and export markets." },
+        { title: "Produce", body: "Dairy and poultry for the local market." },
         { title: "Build & advise", body: "Real estate development and consultancy services." },
       ],
     },
@@ -70,7 +70,7 @@ const en = {
       title: "Exporting Ethiopia's best. Importing what Ethiopia needs.",
       export: {
         label: "Export",
-        body: "We prepare and ship Ethiopian coffee and minerals to international buyers, with full documentation, quality control and reliable logistics through Djibouti.",
+        body: "We grow coffee on our own farm and mine minerals at our own sites, then prepare and ship them to international buyers with full documentation, quality control and reliable logistics through Djibouti.",
       },
       import: {
         label: "Import",
@@ -117,7 +117,7 @@ const en = {
       title: "Built on trade. Growing with Ethiopia.",
       body: [
         "Mati Trading PLC is an Ethiopian company headquartered in Addis Ababa. We trade, produce and invest in sectors that matter to Ethiopia's economy.",
-        "Our business started with export trade. Over time, the relationships we built with producers, buyers, suppliers and authorities let us grow into new sectors: mineral export, veterinary and electrical imports, dairy and livestock farming, construction and real estate, and consultancy.",
+        "Our business started with export trade. Over time, the relationships we built with producers, buyers, suppliers and authorities let us grow into new sectors: mineral export, veterinary and electrical imports, dairy and poultry farming, construction and real estate, and consultancy.",
         "What links these businesses is a way of working. We are careful with quality, open in our dealings and committed to partners for the long term.",
       ],
     },
@@ -126,7 +126,7 @@ const en = {
       title: "How we deliver, in every business line.",
       items: [
         { tag: "01", title: "Understand", body: "We start with the client's specification, timeline and market requirements." },
-        { tag: "02", title: "Source", body: "We work with licensed producers and certified manufacturers we know and trust." },
+        { tag: "02", title: "Source", body: "We produce from our own coffee farm and mining sites, and work with certified manufacturers we know and trust." },
         { tag: "03", title: "Verify", body: "Products are inspected, tested and documented before they move." },
         { tag: "04", title: "Deliver", body: "We manage permits, logistics and customs through to final delivery." },
         { tag: "05", title: "Support", body: "We stay involved after delivery, with follow-up and after-sales support." },
@@ -176,7 +176,7 @@ const en = {
     items: {
       coffee: {
         name: "Coffee Export",
-        short: "Sourcing and exporting quality Ethiopian green coffee to roasters and importers worldwide.",
+        short: "Growing, harvesting and exporting quality Ethiopian green coffee from our own farm to roasters and importers worldwide.",
         tagline: "Ethiopia's best-known export, handled with care.",
         intro: "",
         offerings: [],
@@ -184,18 +184,18 @@ const en = {
       },
       minerals: {
         name: "Mineral Development & Export",
-        short: "Responsible development and export of Ethiopian industrial and precious minerals.",
+        short: "Developing and exporting Ethiopian industrial and precious minerals from our own mining sites.",
         tagline: "Ethiopia's natural resources, delivered responsibly.",
-        intro: "Ethiopia has some of the richest mineral resources in East Africa. We work with licensed producers to develop, grade and export minerals to industrial buyers abroad, with full documentation and a clear chain of custody.",
+        intro: "Ethiopia has some of the richest mineral resources in East Africa. We own and operate our own mining sites, where we develop, extract and grade minerals for export to industrial buyers abroad, with full documentation and a clear chain of custody from our site to the buyer.",
         offerings: [
-          { title: "Sourcing & development", body: "We partner with licensed mining operations to develop reliable, long-term supply." },
+          { title: "Our own mining sites", body: "Minerals come from sites we own and operate, giving buyers reliable, long-term supply." },
           { title: "Grading & quality control", body: "Each lot is sampled, tested and graded to the buyer's specification before shipment." },
           { title: "Export logistics", body: "We handle documentation, permits, packing and shipping through Djibouti." },
         ],
         strengths: [
           { title: "Compliance first", body: "We work within Ethiopia's mining and export regulations." },
           { title: "Transparent documentation", body: "Buyers receive full traceability and test certificates." },
-          { title: "Reliable partners", body: "We build long-term relationships with producers and buyers." },
+          { title: "Reliable partners", body: "We build long-term relationships with our buyers." },
         ],
       },
       "animal-health": {
@@ -231,13 +231,13 @@ const en = {
         ],
       },
       "agro-industry": {
-        name: "Agro-Industry: Dairy & Livestock",
-        short: "Modern dairy, sheep and goat farming producing quality food for Ethiopia and beyond.",
+        name: "Agro-industry: Dairy and Poultry Farm",
+        short: "Modern dairy and poultry farming producing quality food for Ethiopian families.",
         tagline: "Fresh, local food, produced to modern standards.",
-        intro: "Agriculture is in our roots. Our dairy and livestock operations use modern husbandry, feeding and animal welfare practices to raise healthy cattle, sheep and goats and supply fresh milk and quality livestock to the market.",
+        intro: "Agriculture is in our roots. Our dairy and poultry operations use modern husbandry, hygiene and animal welfare practices to supply fresh milk, eggs and poultry products to the Ethiopian market.",
         offerings: [
           { title: "Dairy farming", body: "Well-managed herds producing fresh, high-quality milk." },
-          { title: "Sheep & goat farming", body: "Healthy flocks raised for quality meat and live animal supply." },
+          { title: "Poultry farming", body: "Layer and broiler production with careful biosecurity." },
           { title: "Local supply", body: "Reliable supply to retailers, hotels and processors." },
         ],
         strengths: [
@@ -282,11 +282,11 @@ const en = {
   },
 
   coffee: {
-    meta: { title: "Coffee Export", description: "Specialty and commercial Ethiopian green coffee, sourced from the Guji highlands and exported to roasters and importers worldwide." },
+    meta: { title: "Coffee Export", description: "Specialty and commercial Ethiopian green coffee, grown and harvested on our own farm in the Guji highlands and exported to roasters and importers worldwide." },
     hero: {
       eyebrow: "Business line 01 · Coffee Export",
       title: "Ethiopian green coffee, exported with care.",
-      lead: "We source, prepare and export specialty and commercial green coffee from the Guji highlands to roasters and importers around the world.",
+      lead: "We grow, harvest, prepare and export specialty and commercial green coffee from our own farm in the Guji highlands to roasters and importers around the world.",
       cta: "Request samples",
     },
     story: {
@@ -294,7 +294,7 @@ const en = {
       title: "Guji: high, green and made for coffee.",
       body: [
         "Guji is in the southern Ethiopian highlands. Cool nights, rich volcanic soil and shade from native trees let coffee cherries ripen slowly, and the result is a famously clean, sweet and floral cup.",
-        "We work closely with growers and washing stations in the region, so we can control quality from the farm to the port.",
+        "Our coffee is grown and harvested on our own farm in the region, so we control quality ourselves, from the tree to the port.",
       ],
       facts: [
         { label: "Region", value: "Guji Zone, Oromia" },

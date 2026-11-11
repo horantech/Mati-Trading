@@ -10,10 +10,13 @@ export function ContactForm({
   t,
   divisions,
   endpointEmail,
+  ccEmail,
 }: {
   t: Dict["contact"]["form"];
   divisions: { slug: string; name: string }[];
   endpointEmail: string;
+  /** Optional second recipient, copied on every enquiry. */
+  ccEmail?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [division, setDivision] = useState("");
@@ -40,6 +43,7 @@ export function ContactForm({
           _subject: `Website enquiry — ${divisionName} — ${data.name}`,
           _template: "table",
           _captcha: "false",
+          ...(ccEmail ? { _cc: ccEmail } : {}),
           _replyto: data.email,
           Name: data.name,
           Company: data.company,

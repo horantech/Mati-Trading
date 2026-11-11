@@ -40,10 +40,10 @@ The build optimises images automatically. `pnpm build` first runs `scripts/optim
 
 ## Contact form
 
-The form posts to [FormSubmit](https://formsubmit.co) and delivers to `site.formEmail` (currently `contact@horan.tech`).
+The form posts to [FormSubmit](https://formsubmit.co) and delivers to `site.formEmail` (ardaajilaa@yahoo.com), with a copy to `site.formCc` (borugelchu@yahoo.com).
 
 - **First submission:** FormSubmit sends an activation email to that address. Click the link once and later messages arrive normally.
-- **To change the recipient:** edit `formEmail` in `src/lib/site.ts`, rebuild, and activate the new address the same way.
+- **To change the recipient:** edit `formEmail` / `formCc` in `src/lib/site.ts`, rebuild, and activate the new address the same way.
 
 ## Brand
 
@@ -55,7 +55,7 @@ The form posts to [FormSubmit](https://formsubmit.co) and delivers to `site.form
 ## Content to confirm with the client
 
 - [ ] Final domain (`site.url`)
-- [ ] Office address, phone, WhatsApp, email, social links
+- [ ] Office address, WhatsApp, social links (emails and phones are confirmed)
 - [ ] Leadership names, roles and photos (About page)
 - [ ] Export markets listed on the homepage (Europe, Middle East, Asia, North America)
 - [ ] Coffee facts: altitude range, harvest months, grades offered
