@@ -15,11 +15,11 @@ export const site = {
     phones: ["+251 978 325 200", "+251 951 787 171", "+251 911 743 602"],
     whatsapp: "", // TO CONFIRM e.g. "251900000000" (digits only) — hidden while empty
     address: {
-      en: "Addis Ababa, Ethiopia",
-      am: "አዲስ አበባ፣ ኢትዮጵያ",
-      om: "Finfinnee, Itoophiyaa",
+      en: "Furi Subcity, Sheger City, Oromia, Ethiopia",
+      am: "ፉሪ ክፍለ ከተማ፣ ሸገር ከተማ፣ ኦሮሚያ፣ ኢትዮጵያ",
+      om: "Kutaa Magaalaa Furii, Magaalaa Shaggar, Oromiyaa, Itoophiyaa",
     },
-    mapQuery: "Addis Ababa, Ethiopia", // TO CONFIRM: exact office address
+    mapQuery: "Furi, Sheger City, Oromia, Ethiopia",
   },
   social: {
     linkedin: "", // TO CONFIRM — hidden while empty

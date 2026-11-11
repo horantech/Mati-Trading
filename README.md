@@ -55,7 +55,7 @@ The form posts to [FormSubmit](https://formsubmit.co) and delivers to `site.form
 ## Content to confirm with the client
 
 - [ ] Final domain (`site.url`)
-- [ ] Office address, WhatsApp, social links (emails and phones are confirmed)
+- [ ] WhatsApp, social links (address, emails and phones are confirmed)
 - [ ] Leadership names, roles and photos (About page)
 - [ ] Export markets listed on the homepage (Europe, Middle East, Asia, North America)
 - [ ] Coffee facts: altitude range, harvest months, grades offered

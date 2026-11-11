@@ -14,8 +14,8 @@ export const images = {
   "home-cta": { alt: "Business partners shaking hands in a modern meeting room", ratio: "16:9" },
 
   "about-hero": { alt: "A modern office building in Addis Ababa", ratio: "16:9" },
-  "about-story": { alt: "The Mati Trading management team in their Addis Ababa office", ratio: "4:5" },
-  "about-team": { alt: "The Mati team in a modern office in Addis Ababa", ratio: "21:9" },
+  "about-story": { alt: "The Mati Trading management team in their office", ratio: "4:5" },
+  "about-team": { alt: "The Mati team in their modern office", ratio: "21:9" },
 
   "division-coffee": { alt: "Green coffee beans being sorted by hand in a warehouse", ratio: "16:9" },
   "division-minerals": { alt: "Mineral ore samples in an industrial setting", ratio: "16:9" },

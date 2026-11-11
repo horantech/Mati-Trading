@@ -36,7 +36,7 @@ const en = {
 
   home: {
     hero: {
-      eyebrow: "Addis Ababa · Ethiopia · Global markets",
+      eyebrow: "Oromia · Ethiopia · Global markets",
       title: "Trusted trade.",
       titleAccent: "Built in Ethiopia.",
       lead: "Mati Trading PLC is a diversified Ethiopian company. We export coffee and minerals, import essential equipment and supplies, and invest in agro-industry, construction and advisory services.",
@@ -116,7 +116,7 @@ const en = {
       eyebrow: "Who we are",
       title: "Built on trade. Growing with Ethiopia.",
       body: [
-        "Mati Trading PLC is an Ethiopian company headquartered in Addis Ababa. We trade, produce and invest in sectors that matter to Ethiopia's economy.",
+        "Mati Trading PLC is an Ethiopian company headquartered in Sheger City, Oromia. We trade, produce and invest in sectors that matter to Ethiopia's economy.",
         "Our business started with export trade. Over time, the relationships we built with producers, buyers, suppliers and authorities let us grow into new sectors: mineral export, veterinary and electrical imports, dairy and poultry farming, construction and real estate, and consultancy.",
         "What links these businesses is a way of working. We are careful with quality, open in our dealings and committed to partners for the long term.",
       ],

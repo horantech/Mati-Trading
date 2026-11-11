@@ -34,7 +34,7 @@ const om: Dict = {
 
   home: {
     hero: {
-      eyebrow: "Finfinnee · Itoophiyaa · Gabaa addunyaa",
+      eyebrow: "Oromiyaa · Itoophiyaa · Gabaa addunyaa",
       title: "Daldala amanamaa.",
       titleAccent: "Itoophiyaa keessatti ijaarame.",
       lead: "Mati Trading PLC dhaabbata Itoophiyaa damee hedduu qabuudha. Bunaa fi albuuda alatti ergina, meeshaalee fi dhiyeessii barbaachisoo biyya keessatti galchina, akkasumas industirii qonnaa, ijaarsaa fi tajaajila gorsaa irratti invastimantii goona.",
@@ -114,7 +114,7 @@ const om: Dict = {
       eyebrow: "Eenyu akka taane",
       title: "Daldala irratti ijaarame. Itoophiyaa wajjin guddachaa jira.",
       body: [
-        "Mati Trading PLC dhaabbata Itoophiyaa waajjirri muummee isaa Finfinnee ta'eedha. Dameewwan dinagdee Itoophiyaaf barbaachisoo ta'an keessatti ni daldalla, ni oomishna, invastimantiis ni goona.",
+        "Mati Trading PLC dhaabbata Itoophiyaa waajjirri muummee isaa Magaalaa Shaggar, Oromiyaa ta'eedha. Dameewwan dinagdee Itoophiyaaf barbaachisoo ta'an keessatti ni daldalla, ni oomishna, invastimantiis ni goona.",
         "Hojiin keenya daldala alergii irraa jalqabe. Yeroo booda, hariiroon oomishtoota, bitattoota, dhiyeessitootaa fi qaamolee mootummaa wajjin ijaarre gara dameewwan haaraatti akka babal'annu nu dandeessise: alergii albuudaa, galchii yaala beeyladaa fi elektirikaa, horsiisa loon aannanii fi lukuu, ijaarsaa fi qabeenya manaa, akkasumas tajaajila gorsaa.",
         "Wanti daldaloota kanneen walitti hidhu akkaataa hojii keenyaati. Qulqullinaaf of eeggannoo goona, hojii keenya keessatti iftoomina qabna, michoota keenyaaf immoo yeroo dheeraaf kutannoo qabna.",
       ],
